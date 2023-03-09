@@ -1,0 +1,42 @@
+export function sayHello() {
+    return 'mock value 123';
+}
+
+// USE EXPORTED BACKEND FUNCTIONS IN YOUR BLOKS WIDGETS
+// To use a function from this file in your widget code, follow this syntax:
+// import { <functionName> } from ‘backend/<relativeFilePath>';
+// Example:
+// ----------
+// import { multiply } from ‘backend/newJswFile’
+
+
+//USE EXPORTED BACKEND FUNCTIONS ON A SITE
+// Exported functions in the backend root folder can be used in any Wix site after building and installing the app.
+// To use a function from this file in a site, follow this syntax:
+// import {functionName} from '@<yourAccountName>/<appNamespace>-backend';
+
+// Example:
+// ----------
+// The following example includes the backend function and the code for using the function in a site's page code.
+
+// In your Blocks file:
+/*
+export async function multiply(factor1, factor2) {
+  return factor1*factor2;
+}
+*/
+
+// In the Site:
+/*
+import {multiply} from '@myAccountName/exampleApp-backend';
+
+$w.onReady(function () {
+  multiply(4,5).then(product => {
+    console.log(product);
+    // Logs: 20
+  })
+  .catch(error => {
+    console.log(error);
+  });
+});
+*/
