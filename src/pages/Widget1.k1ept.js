@@ -5,7 +5,7 @@ import backend from 'backend/backend';
 
 $w.onReady(async function () {
 	// Initialize your widget here. If your widget has properties, this is a good place to read their values and initialize the widget accordingly.
-	$w('#text1').text = (await backend.sayHello()) + ' from Yoav';
+	$w('#text1').text = (await backend.sayHello()) + ' from Tzachi!';
 });
 
 $widget.onPropsChanged((oldProps, newProps) => {
