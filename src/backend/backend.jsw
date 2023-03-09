@@ -1,5 +1,5 @@
 export function sayHello() {
-    return 'mock value 123';
+    return 'mock value yay!';
 }
 
 // USE EXPORTED BACKEND FUNCTIONS IN YOUR BLOKS WIDGETS
